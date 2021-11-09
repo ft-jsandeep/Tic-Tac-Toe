@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./assests/ttt.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section>
+      <form action="" class="GameMode">
+        <div class="GameModeContainer">
+          <label class="GameModeChoice">
+            <input type="radio" value="PvC" name="GameMode" />
+            Player Vs Computer
+          </label>
+        </div>
+        <div class="GameModeContainer">
+          <label class="GameModeChoice">
+            <input type="radio" value="PvP" name="GameMode" />
+            Player Vs Player
+          </label>
+        </div>
+        <button class="button_slide slide_diagonal">Submit</button>
+        <!-- <button type="button" class="btn btn-light">Submit</button> -->
+      </form>
+    </section>
+
+    <section class="ttt">
+      <div class="col">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
+      <div class="col">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
+      <div class="col">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
+    </section>
+    <h1 class="winner"></h1>
+
+    <script src="./assests/ttt.js"></script>
+  </body>
+</html>

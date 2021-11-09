@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #03045e;
+  --primary-color: #ade8f4;
+  --font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  font-size: 16px;
+}
+
+.GameMode {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* grid-template-columns: 1fr 1fr;
+  grid-row-gap: 10em; */
+}
+
+.GameModeChoice {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  padding: 4em 2em;
+  border-radius: 0.6em;
+  background: rgba(85, 86, 126, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  margin-left: 2em;
+  font-size: 1.5em;
+  transition: all 0.4s linear;
+}
+
+.GameModeChoice:hover {
+  padding: 4.5em 2em;
+  backdrop-filter: blur(12px);
+}
+
+.GameModeChoice::before {
+  content: "";
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  background: linear-gradient(#f00, #f0f);
+  border-radius: 50%;
+  top: -8%;
+  margin-left: -2.5em;
+}
+
+.GameModeChoice::after {
+  content: "";
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  background: linear-gradient(#c76c98, #f0f);
+  border-radius: 5%;
+  bottom: -8%;
+  margin-left: 1em;
+}
+
+.ttt {
+  display: none;
+  /* transform: scale(0.05); */
+  /* transition: transform 0.4s linear; */
+}
+
+/* .start {
+  position: absolute;
+  z-index: 1;
+  height: 6em;
+  width: 6em;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  width: 100px;
+  height: 100px;
+  border: 3px solid var(--primary-color);
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+/* .GameModeButton {
+  padding: 1.5em 4em;
+  margin-left: 3em;
+  border-radius: 30%;
+} */
+
+.button_slide {
+  color: #fff;
+  border: 2px solid rgb(216, 2, 134);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #d80286;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  background-color: transparent;
+  margin-left: 2em;
+}
+
+.slide_diagonal:hover {
+  box-shadow: inset 400px 50px 0 0 #d80286;
+}
